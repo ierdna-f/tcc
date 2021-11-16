@@ -36,9 +36,12 @@ public class PagamentoServiceImpl implements PagamentoService {
         pagamentoRepository.save(new Pagamento(pagamentoDTO));
     }
 
-
     public void delete(Integer id){
         pagamentoRepository.deleteById(id);
+    }
+
+    public void deleteList(List<Integer> ids){
+        return;
     }
 
 }
